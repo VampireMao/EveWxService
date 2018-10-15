@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveWxService", "EveWxService\EveWxService.csproj", "{DAB2B35E-DB2C-4124-83CD-CCC5BADF2A6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAB2B35E-DB2C-4124-83CD-CCC5BADF2A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB2B35E-DB2C-4124-83CD-CCC5BADF2A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB2B35E-DB2C-4124-83CD-CCC5BADF2A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB2B35E-DB2C-4124-83CD-CCC5BADF2A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0037CD9E-0EFA-4557-BC10-8BC91AE8B66E}
+	EndGlobalSection
+EndGlobal
