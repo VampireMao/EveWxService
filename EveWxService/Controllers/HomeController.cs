@@ -28,9 +28,35 @@ namespace EveWxService
                 var mcObj = JsonConvert.DeserializeObject<MessageClass>(Encoding.UTF8.GetString(jsonBytes));
 
                 mc = mcObj;
+            }
+            catch (Exception ex)
+            {
+                mc = new MessageClass()
+                {
+                    MessageType = -1,
+                    Message = ex.Message + ex.StackTrace
+                };
+            }
 
-                //GetGuangGao(a, GroupID);
+            return JsonConvert.SerializeObject(mc);
+        }
 
+        [HttpPost]
+        public string GetCharacter(string name)
+        {
+            MessageClass mc = null;
+            try
+            {
+                string sqlUrl = "https://www.asdfg.men/home/GetCharacter";
+
+                WebClient wc = new WebClient();
+                NameValueCollection nvc = new NameValueCollection();
+                nvc.Add("name", name);
+                var jsonBytes = wc.UploadValues(sqlUrl, "POST", nvc);
+
+                var mcObj = JsonConvert.DeserializeObject<MessageClass>(Encoding.UTF8.GetString(jsonBytes));
+
+                mc = mcObj;
             }
             catch (Exception ex)
             {
